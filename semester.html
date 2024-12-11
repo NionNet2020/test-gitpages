@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div style="display: flex; align-items: center">
+                <a href="index.html"><img src="static/src/logo.png" alt="Логотип" class="logo"></a>
+                <h1 id="main-header">Lorem</h1> <!-- Добавлен id для заголовка -->
+            </div>
+            <div class="header-info">
+                <h3 style="display: flex">
+                    Группа
+                    <div style="text-decoration: dashed;">ЭФБО-05-23</div>
+                </h3>
+                <h3>Чуканов Николай Валерьевич</h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="semester.html">Первый семестр</a></li>
+                <li><a href="#">Второй семестр</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="#">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <aside>
+            <h2>Навигация по странице</h2>
+            <ul>
+                <li><a href="#section1">Лекции</a></li>
+                <li><a href="#section2">Практики</a></li>
+                <li><a href="#section3">Рабочая программа</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div style = "display: flex; justify-content: space-around;">
+                <img src="static/src/13125294_5157127.jpg" alt="Фото анимации" class="student-photo" id="student-photo">
+                <img src="static/src/9233822_4117039.jpg" alt="Фото анимации" class="student-photo" id="student-photo2">
+            </div>
+            <h2><p style = "width: fit-content">Первый семестр</p></h2>
+        
+        <h2>Лекции</h2>
+        <h2 class = "lecturesh2"></h2>
+        <table class="table-60">
+            <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr_odd">
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>2</td>
+                    <td>Углубленное изучение HTML</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>3</td>
+                    <td>Основы работы с CSS</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>4</td>
+                    <td>Адаптивная верстка. Flexbox и Grid Layout</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>5</td>
+                    <td>Bootstrap - работа с мейнфреймом</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>6</td>
+                    <td>Основы языка JavaScript</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>7</td>
+                    <td>Работа с DOM и событиями в JavaScript</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>8</td>
+                    <td>Введение в GitHub и GitHub Pages</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/src/logo.png" class="d-block w-100" alt="Фото 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/src/tel.png" class="d-block w-100" alt="Фото 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/src/vk.png" class="d-block w-100" alt="Фото 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#photoCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Предыдущее</span>
+            </a>
+            <a class="carousel-control-next" href="#photoCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Следующее</span>
+            </a>
+        </div>
+
+
+        <h2>Практики</h2>
+        
+        <table class="table-90" id="practices-table"> <!-- Добавлен id для таблицы практик -->
+            <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Тема</th>
+                    <th>Посещение</th>
+                    <th>Выполнение</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr_odd">
+                    <td>1</td>
+                    <td>Основы языка HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>2</td>
+                    <td>Формы и кнопки в HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>3</td>
+                    <td>Таблицы и интерактивные элементы в HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>4</td>
+                    <td>Основы работы с CSS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>5</td>
+                    <td>Работа с классами в CSS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>6</td>
+                    <td>Работа с сетками и разметкой в HTML</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>7</td>
+                    <td>Адаптивная верстка</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>8</td>
+                    <td>Bootstrap</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>9</td>
+                    <td>Основы языка JavaScript</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>10</td>
+                    <td>Базовые задачи на JS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>11</td>
+                    <td>DOM-структура приложений и работа с объектами на языке JS</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>12</td>
+                    <td>Встраивание скриптов</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>13</td>
+                    <td>Отладка сценариев</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>14</td>
+                    <td>Анимации и работа с ними</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_odd">
+                    <td>15</td>
+                    <td>Github</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr class="tr_even">
+                    <td>16</td>
+                    <td>Защита проекта</td>
+                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <!-- Кнопка для смены тем практик -->
+        <button id="change-practices">Посмотреть практики второго семестра</button>
+
+        <div class="adres">
+            Занятия проходят по адресу:
+            <div class="underline">просп. Вернадского, 78, стр. 4, Москва</div>
+        </div>
+        <fieldset>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0241fed3485519bf83a8a720639fe70f8035937ca83552ca53ac933160d829f5&amp;source=constructor" allowfullscreen></iframe>
+        </fieldset>
+        <fieldset>
+            <legend>Рабочая программа</legend>
+            <div>
+                <embed src="static/src/Константин Константинович Романов (1858-1915).pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+        </fieldset>
+        </main>
+        <button class="scroll-up" onclick="scrollToTop()">Up</button>
+    </section>
+
+    <footer>
+        <div class="footer-text">© Чуканов Николай Валерьевич, 2024</div>
+        <div class="footer-images">
+            <a href="https://m.vk.com/"><img class="footer_img" src="vk.png" alt="VK"></a>
+            <a href="https://m.vk.com/"><img class="footer_img" src="tel.png" alt="Телефон"></a>
+        </div>
+    </footer>
+
+    <script src="static/js/task14.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

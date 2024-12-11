@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div style="display: flex; align-items: center">
+                <a href="index.html"><img src="static/src/logo.png" alt="Логотип" class="logo"></a>
+                <h1 id="main-header">Lorem</h1> <!-- Добавлен id для заголовка -->
+            </div>
+            <div class="header-info">
+                <h3 style="display: flex;">
+                    Группа
+                    <div style="text-decoration: dashed;">ЭФБО-05-23</div>
+                </h3>
+                <h3>Чуканов Николай Валерьевич</h3>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="semester.html">Первый семестр</a></li>
+                <li><a href="#">Второй семестр</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="#">Авторизация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <aside class = "aside_glav">
+            <h2>Навигация по странице</h2>
+            <ul>
+                <li><a href="#section1">Лекции</a></li>
+                <li><a href="#section2">Практики</a></li>
+                <li><a href="#section3">Рабочая программа</a></li>
+            </ul>
+        </aside>
+        <main>
+            <div class="content-section">
+                <h2>Разработка веб-приложений</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card shadow mb-4">
+                            <img src="static/src/13125294_5157127.jpg" class="card-img-top" alt="Товар 1" style="object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Сайт визитка</h5>
+                                <p class="card-text">Описание сайта визитки.</p>
+                                <button class="btn btn-primary openModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>                        
+                    
+                    <div class="col-md-4">
+                        <div class="card shadow mb-4">
+                            <img src="static/src/13125294_5157127.jpg" class="card-img-top" alt="Товар 1" style="object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Сайт визитка</h5>
+                                <p class="card-text">Описание сайта визитки.</p>
+                                <button class="btn btn-primary openModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="card shadow mb-4">
+                            <img src="static/src/13125294_5157127.jpg" class="card-img-top" alt="Товар 1" style="object-fit: cover;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Сайт визитка</h5>
+                                <p class="card-text">Описание сайта визитки.</p>
+                                <button class="btn btn-primary openModal">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <h2 id="section2">Фронтенд</h2>
+            <p> Фронтенд (или клиентская часть) - это то, что видит пользователь. 
+                Он включает в себя все визуальные элементы веб-сайта или приложения: 
+                кнопки, формы, изображения и текст. Фронтенд разработчики используют 
+                языки разметки и стилизации, такие как HTML, CSS и JavaScript, 
+                чтобы создавать интерактивные и привлекательные интерфейсы. 
+                Основная задача фронтенда - обеспечить удобство использования и 
+                эстетическую привлекательность.</p>
+            <h2 id="section3">Бэкенд</h2>
+            <p> Бэкенд (или серверная часть) - это "за кулисами" 
+                веб-приложения. Он отвечает за обработку данных, 
+                управление пользователями и взаимодействие с 
+                базами данных. Бэкенд разработчики используют 
+                языки программирования, такие как Python, Ruby, 
+                Java или PHP, а также фреймворки и базы данных 
+                для создания логики приложения. Основная задача 
+                бэкенда - обеспечить стабильную работу приложения 
+                и безопасность данных.</p>
+        </main>
+        <button class="scroll-up" onclick="scrollToTop()">Up</button>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Разработка веб-приложения</h2>
+            <p>
+                Заполните форму и мы обязательно свяжемся с вами в ближайшее время
+            </p>
+            <form id="myForm">
+                <label for="name">Имя:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+    
+                <label for="email">Электронная почта:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="phone">Телефон:</label><br>
+                <input type="text" id="phone" name="phone" required><br><br>
+    
+                <label for="country">Страна:</label><br>
+                <select id="country" name="country" required>
+                    <option value="">Выберите страну</option>
+                    <option value="ru">Россия</option>
+                    <option value="us">США</option>
+                    <option value="de">Германия</option>
+                </select><br><br>
+                <label for="date">Дата:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+    
+                <label for="comments">Комментарии:</label><br>
+                <textarea id="comments" name="comments"></textarea><br><br>
+                
+                <input id="html" type="checkbox" required>
+                <label for="html">Согласен на обработку моих персональных данных</label>
+                
+                <input type="hidden" id="serviceType" name="serviceType">
+    
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="successMessage" style="display:none; margin-top: 20px; color: green;">Форма успешно отправлена!</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-text">© Чуканов Николай Валерьевич, 2024</div>
+        <div class="footer-images">
+            <a href="https://m.vk.com/"><img class="footer_img" src="static/src/vk.png" alt="VK"></a>
+            <a href="https://m.vk.com/"><img class="footer_img" src="static/src/tel.png" alt="WhatsApp"></a>
+        </div>
+    </footer>
+
+    <script src="static/js/task14.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script>
+    function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    
+    // Получаем элементы модального окна
+    var modal = document.getElementById("myModal");
+    var btns = document.getElementsByClassName("openModal");
+    var span = document.getElementsByClassName("close")[0];
+    const form = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage"); 
+
+    // Открываем модальное окно при нажатии на любую кнопку
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].onclick = function() {
+            modal.style.display = "block";
+        }
+    }
+
+    // Закрываем модальное окно при нажатии на (x)
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // Закрываем модальное окно при нажатии вне его
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    const formData = {
+    name: '',
+    email: '',
+    phone: '',
+    date: '',
+    comment: '',
+    
+    printData: function() {
+        console.log(`Имя: ${this.name}`);
+        console.log(`E-mail: ${this.email}`);
+        console.log(`Телефон: ${this.phone}`);
+        console.log(`Дата: ${this.date}`);
+        console.log(`Комментарий: ${this.comment}`);
+    }
+    };
+
+    function submitForm() {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const date = document.getElementById('date').value;
+        const comment = document.getElementById('comments').value.trim();
+
+        if (!name || !email || !comment) {
+            alert('Поля Имя, E-mail и Комментарий не могут быть пустыми.');
+            return;
+        }
+
+        if ((phone.length != phone.replace(/\D/g, '')) && (phone.length != 11)) {
+            alert('Телефон должен содержать только цифры.');
+            return;
+        }
+
+        if (!(/^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}$/.test(email))) {
+            alert('Некорректный E-mail.');
+            return;
+        }
+
+        formData.name = name;
+        formData.email = email;
+        formData.phone = phone;
+        formData.date = date;
+        formData.comment = comment;
+
+        formData.printData();
+        const successMessage = document.getElementById('successMessage');
+        successMessage.style.display = "block";
+        //Задание 14
+        //5
+        successMessage.style.color = "green";
+        let isGreen = false;
+
+        setInterval(() => {
+            if (isGreen) {
+                successMessage.style.color = "blue";
+                successMessage.style.transition = "color 0.5s";
+            } else {
+                successMessage.style.color = "green";
+                successMessage.style.transition = "color 0.5s";
+            }
+            isGreen = !isGreen;
+        }, 1000);
+    }
+
+    document.getElementById('myForm').onsubmit = function(e) {
+        e.preventDefault();
+        submitForm();
+    };
+</script>
