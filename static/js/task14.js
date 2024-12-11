@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         studentPhoto.addEventListener('click', function () {
-            this.src = '../static/src/logo.png';
+            this.src = 'static/src/logo.png';
             this.alt = 'Фото ';
         });
 
